@@ -1,0 +1,189 @@
+/* General Layout */
+body {
+  background-color: #f2f4f8; /* Soft light grayish-blue background */
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+  color: #333; /* A dark gray for general text */
+}
+
+.mainDiv {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f4f8; /* Soft neutral background */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff6f61; /* Coral color for the main title */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inputTag {
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inputTag:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
+}
+
+.searchButton {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton:hover {
+  background-color: #ff3d30;
+  box-shadow: 0 6px 12px rgba(255, 61, 48, 0.4);
+}
+
+.innerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Food Card Layout */
+.foodDiv {
+  background-color: #ffffff; /* Pure white for the card background */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.foodDiv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foodDiv img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.foodDiv:hover img {
+  transform: scale(1.05);
+}
+
+.foodDiv h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.viewRecipeButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.viewRecipeButton:hover {
+  background-color: #ff3d30;
+  box-shadow: 0 6px 12px rgba(255, 61, 48, 0.4);
+}
+
+/* Recipe Page (Compact Card Layout) */
+.recipePage {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f2f4f8;
+  max-height: 100vh;
+}
+
+.recipeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make card fill entire width of the viewport */
+  height: auto; /* No fixed height */
+  max-width: 600px; /* Reduced width to make the card smaller */
+  margin: 0 auto;
+}
+
+.recipeContainer img {
+  width: 100%;
+  max-width: 350px; /* Reduced image size */
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.recipeDetails {
+  max-width: 450px; /* Smaller content area */
+  text-align: left;
+  margin-top: 20px;
+}
+
+.recipeDetails h2 {
+  font-size: 2rem; /* Reduced size for title */
+  color: #ff6f61;
+}
+
+.recipeDetails h3 {
+  font-size: 1.4rem; /* Smaller subtitle */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recipeDetails p {
+  font-size: 0.9rem; /* Smaller paragraph text */
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Ensure layout remains responsive */
+@media (max-width: 768px) {
+  .recipeContainer {
+    width: 100%;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .recipeDetails {
+    max-width: 100%;
+  }
+}
